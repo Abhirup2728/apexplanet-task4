@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Products</h1>
+
+<select id="filter" onchange="filterProducts()">
+  <option value="all">All</option>
+  <option value="electronics">Electronics</option>
+  <option value="clothing">Clothing</option>
+</select>
+
+<select id="sort" onchange="sortProducts()">
+  <option value="default">Sort</option>
+  <option value="low">Price Low-High</option>
+  <option value="high">Price High-Low</option>
+</select>
+
+<div id="productList" class="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
